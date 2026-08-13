@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACKLINE Detailing | Елітний детейлінг та захист авто у Києві</title>
+  <meta name="description" content="Преміальна студія детейлінгу BLACKLINE. Обклеювання антигравійною плівкою PPF, нанокераміка 9H, багатоетапне полірування та догляд за салоном авто у Києві.">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BLACKLINE Detailing | Елітний дітейлінг у Києві">
+  <meta property="og:description" content="Повертаємо салонний вигляд та надаємо гарантований сапфіровий захист кузова вашого авто.">
+  <meta property="og:image" content="assets/images/hero-supercar.jpg">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
+
+  <!-- ==========================================================================
+       1. HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <span class="logo-text">BLACK<span>LINE</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#services" class="nav-link">Послуги</a></li>
+          <li><a href="#comparison" class="nav-link">До & Після</a></li>
+          <li><a href="#gallery" class="nav-link">Галерея</a></li>
+          <li><a href="#advantages" class="nav-link">Переваги</a></li>
+          <li><a href="#process" class="nav-link">Процес</a></li>
+          <li><a href="#pricing" class="nav-link">Ціни</a></li>
+          <li><a href="#calculator" class="nav-link">Калькулятор</a></li>
+          <li><a href="#reviews" class="nav-link">Відгуки</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contacts" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:+380449998877" class="phone-link js-bind-phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold)" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          +38 (044) 999-88-77
+        </a>
+        <button class="btn btn-primary js-open-modal">Записатись</button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Відкрити меню">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div>
+      <div class="drawer-header">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <span class="logo-text">BLACK<span>LINE</span></span>
+        </a>
+        <button class="drawer-close" id="drawerClose" aria-label="Закрити меню">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="drawer-nav">
+        <li><a href="#services" class="drawer-link">Послуги студії</a></li>
+        <li><a href="#comparison" class="drawer-link">Результати До/После</a></li>
+        <li><a href="#gallery" class="drawer-link">Галерея робіт</a></li>
+        <li><a href="#advantages" class="drawer-link">Переваги студії</a></li>
+        <li><a href="#process" class="drawer-link">Процес робіт</a></li>
+        <li><a href="#pricing" class="drawer-link">Пакети & Ціни</a></li>
+        <li><a href="#calculator" class="drawer-link">Калькулятор ціни</a></li>
+        <li><a href="#reviews" class="drawer-link">Відгуки клієнтів</a></li>
+        <li><a href="#faq" class="drawer-link">Питання та відповіді</a></li>
+        <li><a href="#contacts" class="drawer-link">Контакти</a></li>
+      </ul>
+    </div>
+    <div>
+      <button class="btn btn-primary js-open-modal" style="width: 100%;">Забронювати час</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-media">
+      <img src="assets/images/hero-supercar.jpg" alt="Porsche 911 GT3 RS in Blackline Detailing Studio Kyiv">
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content reveal-on-scroll">
+        <div class="eyebrow">PREMIUM AUTOMOTIVE DETAIL & PROTECTION</div>
+        <h1 class="hero-headline">
+          БЕЗДОГАННІСТЬ У <span class="gradient-text-gold">КОЖНІЙ ДЕТАЛІ</span>
+        </h1>
+        <p class="hero-subtext">
+          Елітна студія дітейлінгу у Києві. Повертаємо салонний вигляд, забезпечуємо бездоганний глянець та пожиттєвий захист кузова бронеплівкою SunTek / STEK.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#calculator" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+              <line x1="8" y1="6" x2="16" y2="6"></line>
+              <line x1="16" y1="14" x2="16" y2="18"></line>
+            </svg>
+            Розрахувати вартість
+          </a>
+          <button class="btn btn-secondary js-open-modal">
+            Записатися на візит
+          </button>
+        </div>
+
+        <!-- 3. TRUST INDICATORS STRIP -->
+        <div class="hero-stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Захищених преміум-авто</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10 років</div>
+            <div class="stat-label">Офіційної гарантії PPF</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">9H</div>
+            <div class="stat-label">Сапфірова твердість кераміки</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Онлайн-відео боксів</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SERVICES SHOWCASE (BENTO GRID)
+       ========================================================================== -->
+  <section class="section-spacing" id="services" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header reveal-on-scroll">
+        <div class="eyebrow">ПОСЛУГИ СТУДІЇ</div>
+        <h2 class="section-title">КОМПЛЕКСНІ РІШЕННЯ ДЛЯ <span class="gradient-text-gold">ВАШОГО АВТО</span></h2>
+        <p class="section-subtitle">Використовуємо лише оригінальні преміальні матеріали від провідних світових брендів SunTek, STEK, Meguiar's та Gyeon.</p>
+      </div>
+
+      <!-- Dynamically Rendered Bento Grid -->
+      <div class="bento-grid" id="servicesBentoGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. INTERACTIVE BEFORE / AFTER COMPARISON
+       ========================================================================== -->
+  <section class="section-spacing" id="comparison">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">РЕЗУЛЬТАТИ МАЙСТЕРНОСТІ</div>
+        <h2 class="section-title">ПОРІВНЯННЯ <span class="text-gold">ДО ТА ПІСЛЯ</span></h2>
+        <p class="section-subtitle">
+          Перетягніть слайдер, щоб побачити магію відновлення лакофарбового покриття після багатоетапного полірування та нанесення 9H керамічного шару.
+        </p>
+      </div>
+
+      <div class="reveal-on-scroll delay-1">
+        <div class="slider-wrapper" id="beforeAfterSlider">
+          <div class="slider-image-before">
+            <img src="assets/images/paint-before.jpg" alt="Пошкоджене ЛФП з подряпинами до дітейлінгу">
+            <div class="slider-tag before">ДО: Потертості & Подряпини</div>
+          </div>
+
+          <div class="slider-image-after">
+            <img src="assets/images/paint-after.jpg" alt="Бездоганне лакофарбове покриття після полірування">
+            <div class="slider-tag after">ПІСЛЯ: Дзеркальний Глянець 9H</div>
+          </div>
+
+          <div class="slider-handle">
+            <div class="slider-handle-button">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"></polyline>
+                <polyline points="9 18 15 12 9 6" transform="rotate(180 12 12)"></polyline>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. PORTFOLIO / GALLERY
+       ========================================================================== -->
+  <section class="section-spacing" id="gallery" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">ПОРТФОЛІО СТУДІЇ</div>
+        <h2 class="section-title">ГАЛЕРЕЯ <span class="gradient-text-gold">ВИКОНАНИХ РОБІТ</span></h2>
+        <p class="section-subtitle">Ознайомтеся з реальними кейсами захисту та відновлення суперкарів і преміальних автомобілів у нашому дітейлінг-центрі.</p>
+      </div>
+
+      <!-- Gallery Filter Buttons -->
+      <div class="gallery-filters reveal-on-scroll">
+        <button class="gallery-filter-btn active" data-filter="all">Всі роботи</button>
+        <button class="gallery-filter-btn" data-filter="ppf">Плівка PPF</button>
+        <button class="gallery-filter-btn" data-filter="ceramic">Кераміка 9H</button>
+        <button class="gallery-filter-btn" data-filter="polishing">Полірування</button>
+        <button class="gallery-filter-btn" data-filter="interior">Салон</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. STUDIO ADVANTAGES
+       ========================================================================== -->
+  <section class="section-spacing" id="advantages">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">ЧОМУ ОБИРАЮТЬ BLACKLINE</div>
+        <h2 class="section-title">ПЕРЕВАГИ <span class="text-gold">ПРЕМІУМ-СЕРВІСУ</span></h2>
+        <p class="section-subtitle">Ми створили бездоганні умови для обслуговування авто найвищого класу.</p>
+      </div>
+
+      <div class="advantages-grid" id="advantagesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. TECHNOLOGICAL PROCESS TIMELINE
+       ========================================================================== -->
+  <section class="section-spacing" id="process" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">СТАНДАРТИ ЯКОСТІ</div>
+        <h2 class="section-title">ТЕХНОЛОГІЧНИЙ <span class="gradient-text-gold">ПРОЦЕС</span></h2>
+        <p class="section-subtitle">Жодних компромісів. Кожен автомобіль проходить 4 обов'язкові етапи під контролем старшого майстра.</p>
+      </div>
+
+      <div class="process-grid" id="processStepsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. PACKAGES & PRICING
+       ========================================================================== -->
+  <section class="section-spacing" id="pricing">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">ПРАЙС-ЛИСТ</div>
+        <h2 class="section-title">ПАКЕТНІ <span class="text-gold">РІШЕННЯ</span></h2>
+        <p class="section-subtitle">Прозорі комплексні пакети для захисту та догляду за вашим автомобілем з фіксованою вартістю.</p>
+      </div>
+
+      <div class="packages-grid" id="packagesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. DETAILING COST CALCULATOR
+       ========================================================================== -->
+  <section class="section-spacing" id="calculator" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">ОНЛАЙН РОЗРАХУНОК</div>
+        <h2 class="section-title">КАЛЬКУЛЯТОР <span class="gradient-text-gold">ВАРТОСТІ</span></h2>
+        <p class="section-subtitle">Оберіть тип вашого автомобіля та необхідний комплекс робіт для миттєвого розрахунку орієнтовної ціни та часу виконання.</p>
+      </div>
+
+      <div class="calculator-container reveal-on-scroll delay-1">
+        <!-- Step 1: Car Type -->
+        <div class="calc-step">
+          <div class="calc-step-title">
+            <div class="step-badge">1</div>
+            Оберіть клас вашого авто
+          </div>
+
+          <div class="car-types-grid">
+            <div class="car-type-card selected" data-multiplier="1.0" data-name="Седан / Хетчбек">
+              <span class="car-type-icon">🚗</span>
+              <div class="car-type-name">Седан / Хетчбек</div>
+            </div>
+            <div class="car-type-card" data-multiplier="1.2" data-name="Кросовер / Купе">
+              <span class="car-type-icon">SUV</span>
+              <div class="car-type-name">Кросовер / Купе</div>
+            </div>
+            <div class="car-type-card" data-multiplier="1.4" data-name="Позашляховик / Мінівен">
+              <span class="car-type-icon">🚙</span>
+              <div class="car-type-name">Позашляховик</div>
+            </div>
+            <div class="car-type-card" data-multiplier="1.3" data-name="Суперкар / Спорткар">
+              <span class="car-type-icon">🏎️</span>
+              <div class="car-type-name">Суперкар</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Select Services -->
+        <div class="calc-step">
+          <div class="calc-step-title">
+            <div class="step-badge">2</div>
+            Виберіть необхідні послуги
+          </div>
+
+          <div class="calc-services-grid">
+            <div class="calc-service-item selected" data-id="ppf_front" data-name="Антигравійна плівка (Front Zone)" data-price="28000" data-time="2">
+              <div>
+                <div style="font-weight: 600;">Бронеплівка PPF (Зона ризику)</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Капот, бампер, крила, дзеркала, фари</div>
+              </div>
+              <div class="checkbox-custom">✓</div>
+            </div>
+
+            <div class="calc-service-item selected" data-id="ceramic_3layers" data-name="Кераміка 9H (3 шари)" data-price="14000" data-time="1">
+              <div>
+                <div style="font-weight: 600;">Нанокерамічне покриття 9H</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">3 шари + подвійний гідрофобний топ-шар</div>
+              </div>
+              <div class="checkbox-custom">✓</div>
+            </div>
+
+            <div class="calc-service-item" data-id="polishing" data-name="Детейлінг полірування кузова" data-price="10000" data-time="1.5">
+              <div>
+                <div style="font-weight: 600;">Багатоетапне полірування кузова</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Видалення 95%+ подряпин та дзеркало</div>
+              </div>
+              <div class="checkbox-custom">✓</div>
+            </div>
+
+            <div class="calc-service-item" data-id="interior" data-name="Детейлінг салону & Захист шкіри" data-price="8500" data-time="1">
+              <div>
+                <div style="font-weight: 600;">Детейлінг салону & Бальзам шкіри</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">Хімчистка парою, кераміка для шкіри</div>
+              </div>
+              <div class="checkbox-custom">✓</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Material Grade -->
+        <div class="calc-step">
+          <div class="calc-step-title">
+            <div class="step-badge">3</div>
+            Клас матеріалів та захисту
+          </div>
+
+          <div class="grade-selector">
+            <div class="grade-card selected" data-multiplier="1.0" data-name="Standard SunTek">
+              <div class="grade-name">STANDARD (SunTek)</div>
+              <div class="grade-sub">Офіційна гарантія 5 років</div>
+            </div>
+            <div class="grade-card" data-multiplier="1.2" data-name="Premium STEK">
+              <div class="grade-name">PREMIUM (STEK DynoShield)</div>
+              <div class="grade-sub">Гарантія 8 років, підвищений глянець</div>
+            </div>
+            <div class="grade-card" data-multiplier="1.35" data-name="Ultimate Blackline">
+              <div class="grade-name">BLACKLINE ULTIMATE</div>
+              <div class="grade-sub">Пожиттєва гарантія + кераміка в подарунок</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total Calculation Output Bar -->
+        <div class="calc-total-panel">
+          <div>
+            <div class="total-price-label">Орієнтовна вартість комплексу:</div>
+            <div class="total-price-value" id="calcTotalPrice">42 000 ₴</div>
+            <div class="total-time-estimate" id="calcTotalTime">Орієнтовний час виконання: 3 дні</div>
+          </div>
+          <button class="btn btn-primary" id="bookWithQuoteBtn">
+            Забронювати за цією ціною
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. CUSTOMER REVIEWS
+       ========================================================================== -->
+  <section class="section-spacing" id="reviews">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">ВІДГУКИ ВЛАСНИКІВ</div>
+        <h2 class="section-title">ДОВІРА ВЛАСНИКІВ <span class="gradient-text-gold">СУПЕРКАРІВ</span></h2>
+        <p class="section-subtitle">Понад 500 власників спорткарів та преміальних авто довіряють нам свої автомобілі.</p>
+      </div>
+
+      <div class="reviews-grid" id="reviewsGridContainer"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. FAQ ACCORDION SECTION
+       ========================================================================== -->
+  <section class="section-spacing" id="faq" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header center reveal-on-scroll">
+        <div class="eyebrow">ПИТАННЯ ТА ВІДПОВІДІ</div>
+        <h2 class="section-title">ПОПУЛЯРНІ <span class="text-gold">ПИТАННЯ</span></h2>
+        <p class="section-subtitle">Все, що вам потрібно знати про дітейлінг, гарантію та догляд за захисними покриттями.</p>
+      </div>
+
+      <div class="faq-container" id="faqAccordionContainer"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       13. FINAL CTA CONVERSION BANNER
+       ========================================================================== -->
+  <section class="section-spacing">
+    <div class="container">
+      <div class="final-cta-banner reveal-on-scroll">
+        <div class="eyebrow" style="margin-bottom: 8px;">ГОТОВІ ДО НАДЗВИЧАЙНОГО РЕЗУЛЬТАТУ?</div>
+        <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 3rem); margin-bottom: 16px;">
+          ДОВІРТЕ СВІЙ АВТОМОБІЛЬ <span class="gradient-text-gold">ЕКСПЕРТАМ BLACKLINE</span>
+        </h2>
+        <p class="section-subtitle" style="margin: 0 auto 32px;">
+          Запишіться на безкоштовну діагностику ЛФП під інспекційним світлом та отримайте персональний калькуляційний кошторис.
+        </p>
+        <button class="btn btn-primary js-open-modal" style="font-size: 1.05rem; padding: 16px 36px;">
+          Забронювати візит на дітейлінг
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE BOOKING MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-window">
+      <button class="modal-close js-close-modal" aria-label="Закрити">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="eyebrow" style="margin-bottom: 6px;">БРОНЮВАННЯ ЧАСУ</div>
+        <h3 class="modal-title">Запис на <span class="text-gold">Сервіс</span></h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">Залиште свої дані, і наш старший технолог зв'яжеться з вами протягом 10 хвилин.</p>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="modalName">Ваше ім'я</label>
+          <input class="form-input" type="text" id="modalName" placeholder="Олександр" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalPhone">Номер телефону</label>
+          <input class="form-input" type="tel" id="modalPhone" placeholder="+38 (099) 000-00-00" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalCarInput">Марка та модель автомобіля</label>
+          <input class="form-input" type="text" id="modalCarInput" placeholder="Наприклад: Porsche 911 / BMW X5">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalServiceSelect">Послуга</label>
+          <select class="form-select" id="modalServiceSelect">
+            <option value="Антигравійна плівка (PPF)">Антигравійна плівка (PPF)</option>
+            <option value="Керамічне покриття 9H">Керамічне покриття 9H</option>
+            <option value="Детейлінг полірування">Детейлінг полірування</option>
+            <option value="Детейлінг салону">Детейлінг салону</option>
+            <option value="Комплексний дітейлінг">Комплексний дітейлінг</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Підтвердити запис
+        </button>
+      </form>
+
+      <!-- Success Feedback State -->
+      <div class="modal-success-state" id="modalSuccessState">
+        <div class="success-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 8px;">Заявку успішно прийнято!</h3>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 24px;">
+          Дякуємо! Наш старший майстер зв'яжеться з вами у найближчий час для узгодження часу прийому автомобіля.
+        </p>
+        <button class="btn btn-secondary js-close-modal">Зрозуміло</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       14. FOOTER & CONTACTS
+       ========================================================================== -->
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#" class="logo" style="margin-bottom: 16px;">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <span class="logo-text">BLACK<span>LINE</span></span>
+          </a>
+          <p>
+            Преміальна студія детейлінгу та захисту автомобілів. Бездоганний сервіс та турбота про кожен куточок вашого авто.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <div class="footer-title">Навігація</div>
+          <ul class="footer-links">
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#comparison">Порівняння До/После</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#advantages">Переваги</a></li>
+            <li><a href="#process">Процес робіт</a></li>
+            <li><a href="#pricing">Пакети & Ціни</a></li>
+            <li><a href="#calculator">Калькулятор</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours -->
+        <div>
+          <div class="footer-title">Графік робіт</div>
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <div>
+                <div class="js-bind-hours">Пн - Сб: 09:00 - 20:00</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted);">За попереднім записом</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <div class="footer-title">Локація</div>
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div class="js-bind-address">м. Київ, вул. Велика Васильківська, 100</div>
+            </li>
+            <li class="contact-info-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <div><a href="tel:+380449998877" class="js-bind-phone" style="color: var(--text-secondary); text-decoration: none;">+38 (044) 999-88-77</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 BLACKLINE Detailing Studio. Всі права захищено.</div>
+        <div style="color: var(--text-muted);">Kyiv Premium Automotive Care</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Entry Script -->
+  <script src="js/bundle.js"></script>
+</body>
+</html>
